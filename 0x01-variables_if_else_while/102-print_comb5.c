@@ -1,5 +1,7 @@
 #include <stdio.h>
-
+/*
+ * File: 102-print_comb5.c
+ */
 int main(void)
 {
 	int num1, num2;
