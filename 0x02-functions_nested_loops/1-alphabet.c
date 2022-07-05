@@ -4,10 +4,11 @@
  * main - Entry point
  *
  * Return: nothing
- *
- * print_alphabet - prints the alphabet in lowercase, followed by a new line.
  */
 void print_alphabet(void)
+/**
+ *  print_alphabet - prints the alphabet in lowercase, followed by a new line.
+ */
 
 {
 	char letter;
