@@ -1,3 +1,5 @@
+#include <unistd.h>
+#include <stdio.h>
 /*
  * File: 0-putchar.c
  *Auth: SalrealTeknet
@@ -12,6 +14,7 @@
  * Return: Always 0.
  */
 int main(void)
+	int _putchar(char _putchar)
 {
 	_putchar('_');
 	_putchar('p');
