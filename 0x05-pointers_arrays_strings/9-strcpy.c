@@ -1,20 +1,20 @@
-/**
- * _strcpy - Copies a string pointed to by @src, including the
- *           terminating null byte, to a buffer pointed to by @dest.
- * @dest: A buffer to copy the string to.
- * @src: The source string to copy.
- *
- * Return: A pointer to the destination string @dest.
- */
-char *_strcpy(char *dest, const char *src)
-{
-	int index = 0;
+#include <stdio.h>
+#include "holberton.h"
 
-	while (src[index])
-	{
-		dest[index] = src[index];
-		index++;
-	}
+/**
+ * _strcpy - Copy the src string to the dest string
+ * @dest: Pointer to the destination string
+ * @src: Pointer to the source string
+ *
+ * Return: Pointer to dest
+ */
+char *_strcpy(char *dest, char *src)
+{
+	int i;
+
+	for (i = 0; src[i] != '\0'; i++)
+		dest[i] = src[i];
+	dest[i] = src[i];
 
 	return (dest);
 }
