@@ -1,25 +1,19 @@
 #include <stdio.h>
-
-#define LEN 4
-
-void _memset(char *s, char c, int len);
-
-char *_strcpy(char *dest, char *src);
-
 /**
- * main - check the code.
+ * _strcpy - a function that copies the string pointed to by src,
+ * including the terminating null byte (\0),
+ * to the buffer pointed to by dest.
  *
- * Return: Always 0.
+ * @dest: A pointer to destination of string
+ * @src: A pointer to source string to copy from
+ *
+ * Return: pointer to dest
  */
-int main(void)
+char *_strcpy(char *dest, char *src)
 {
-	char cpy[LEN + 1] = {0};
-	char *str;
-	char *ret;
+	char *aux = dest;
 
-	_memset(cpy, 'H', LEN);
-	str = "Z";
-	ret = _strcpy(cpy, str);
-	printf("%s\n%s\n%s\n", str, cpy, ret);
-	return (0);
-}
+	while (*src)
+		*dest++ = *src++;
+	return (aux);
+
