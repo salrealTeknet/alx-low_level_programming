@@ -1,6 +1,4 @@
-#include "main.h"
-#include <stdio.h>
-
+#include "main.hg"
 #include <stdio.h>
 
 /**
@@ -11,10 +9,10 @@
 int main(void)
 {
   char s1[98];
-  char *p;
+  char *ptr;
 
   p = _strcpy(s1, "First, solve the problem. Then, write the code\n");
   printf("%s", s1);
   printf("%s", p);
   return (0);
-
+}
