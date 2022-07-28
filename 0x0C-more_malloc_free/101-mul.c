@@ -138,9 +138,10 @@ void get_prod(char *prod, char *mult, int digit, int zeroes)
 	}
 
 	if (tens)
+	{
 		*prod = (tens % 10) + '0';
+	}
 }
-
 /**
  * add_nums - Adds the numbers stored in two strings.
  * @final_prod: The buffer storing the running final product.
@@ -180,9 +181,11 @@ void add_nums(char *final_prod, char *next_prod, int next_len)
 	}
 
 	if (tens)
+	{
 		*final_prod = (tens % 10) + '0';
 }
 
+}
 /**
  * main - Multiplies two positive numbers.
  * @argv: The number of arguments passed to the program.
